@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/2c0bb383d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">PortFolio</a></li>  
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'am <span>Nasreen</span><br> Shaikh</h1>
+    
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="./ADHAR CARD.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Nasreen Shaikh I have done Btech in Electronic And Telecommunication from SVERI's
+                        college of <br>engineering Pandharpur. Along with my degree,I have completed java Full Stck Developer course in Qspider.
+                        I have knowledge about JAVA,SQL,HTML,CSS and also I have done project on it. <br> I like to learn new things.
+                        </p>
+                    </p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Developer</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            
+                        </ul>
+                    </div >
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Java Full stack Developer Training at Qspider Institute</li>
+                            <li><span>2022</span><br>BTech in Electronics & Telecommunication Enginner</li>
+                            <li><span>2018</span><br>LVM Junior college Mandrup</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- -------- Services-------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Front-End Devloper</h2>
+                <p>Implementing web accessibility standards and developing suitable web content for all browsers,platforms and devices</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>developing website designs and layouts based on client specifications. 
+                   developing and maintaining website content,including text,images and video</p>
+                 <a href="#">Learn more</a>
+
+            </div>
+    
+        </div>
+      </div>
+    </div>
+   
+    <!------------- Contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>nasreensshaikh06@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9665885878</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1J8QwaoUlBuSB8TQyz3aZEuj-RvtQ2BTV/view" download class="btn btn2">Download CV</a>
+  
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname) {
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+     }
+       for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+     }
+    
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    </script>
+</body>
+</html>
